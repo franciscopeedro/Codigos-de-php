@@ -3,24 +3,19 @@
 class aluno{
 
     public string $nome;
-    public string $matricula;
     public float $media;
 
 
-    function __construct(string $nomealuno, string $matriculaluno)
+    function __construct(string $nomealuno, string $mediaaluno)
     {
         $nome = $nomealuno;
-        $matricula = $matriculaluno;        
+        $media = $mediaaluno;        
     }
 };
 
 $aluno01=  new aluno("Pedro","123");
 $aluno02=  new aluno("Andreia","345");
 $aluno03=  new aluno("Julia","69");
-
-$aluno01->media = 9.5;
-$aluno02->media = 3.1;
-$aluno01->media = 8.9;
 
 echo "-------------------------------------------------------------------------------------------------" . PHP_EOL;
 
